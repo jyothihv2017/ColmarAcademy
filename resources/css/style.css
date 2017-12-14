@@ -1,0 +1,42 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+header{
+  height: 4rem;
+  width: auto;
+}
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 60%;
+  height: 100%;
+}
+
+.banner{
+  background-image: url('../images/banner.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
