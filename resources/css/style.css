@@ -63,40 +63,73 @@ nav a {
   color: #4A4A4A;
 }
 
+
 h1 {
   font-size: 3.125rem;
   color: #4A4A4A;
 }
 
 h2 {
-  font-size: 2.25rem;
-  color: #DEC975;
-  padding-bottom: 1rem;
+  font-size: 2.0rem;
+  color: #FFFFFF;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: #DEC975;
+  /*color: #DEC975;*/
+    color: #FFFFFF;
 }
 
 h4{
   font-size: 1rem;
-  font-style: italic;
-  color: #4A4A4A;
+  /*color: #4A4A4A;*/
+    color: #FFFFFF;
 }
 
 h5{
   font-size: 0.75rem;
-  color: #4A4A4A;
+  /*color: #4A4A4A;*/
+    color: #FFFFFF;
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.45;
+}
+
+
 p{
   font-size: 1rem;
+  line-height: 1.2;
+  color:  #4A4A4A;
 }
+
+.cursive {
+  font-family: "Damion", cursive;
+}
+
+.striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}
+
+.quote{
+  font-family: "Palatino", serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-style: italic;
+}
+
+.quote-citation {
+  height: 1.875rem;
+  color: #4A4A4A;
+}
+
 
 .button {
   /*border-radius: 4px;*/
   background-color: #4A4A4a;
-  color: white;
+  color: #FFFFFF;
   margin-top: 1.625rem;
   padding: 0.5rem 9.5rem;
 }
@@ -105,7 +138,9 @@ p{
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: #F2F2F2;
+  /*background-color: #F2F2F2;*/
+   background: linear-gradient(to bottom right, yellow, orange);
+  /* background: linear-gradient(to bottom right, #000000, #0f9b0f);*/
   top: 4rem;
 }
 
@@ -114,7 +149,8 @@ p{
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-  background-color: #ffe670;
+    border-bottom: solid 1px #c6c1c1;
+  /*background-color: #ffe670;*/
 }
 
 .bold{
@@ -139,6 +175,11 @@ p{
 .small-bottom-margin{
   margin-bottom: 1rem;
 }
+
+.small-top-margin{
+  margin-top: 1rem;
+}
+
 
 .left-margin{
   margin-left: 1.5rem;
@@ -169,8 +210,9 @@ p{
   height: 34rem;
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin: 2rem 1.5rem;
+  border: solid 1px #000000;
 }
 
 .text-content{
@@ -178,17 +220,25 @@ p{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  line-height: 1.4;
   width: 40%;
   height: 34rem;
   margin: 2rem 1.5rem 2rem 0;
+  border: solid 1px #c6c1c1;
+}
+
+.text-content h2{
+  padding-bottom: 1.5rem;
 }
 
 .about{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #fffae5;
-  border-bottom: solid 1px #c6c1c1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+/*  background-color: #fffae5;*/
+/*  border-bottom: solid 1px #c6c1c1; */
 }
 
 .background-img{
@@ -196,8 +246,10 @@ p{
   height: 25rem;
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin: 2rem 1.5rem;
+  background-size: cover;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  /*border-bottom: solid 1px #000000;*/
 }
 
 .information-main{
@@ -212,36 +264,29 @@ p{
  height: auto;
 }
 
+.practice-saying h3{
+  margin-bottom: 1.5rem;
+  color: #4A4A4A;
+}
+
 .key-events{
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 40rem;
+  height: auto;
   justify-content: space-between;
-  margin: 2rem 0 2rem 0;
 }
 
 
-.orientation{
+.key-events-information{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.campus{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.guest-lecture{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #ffe670;
-  width: 100%;
+#guest-lecture{
+    background: linear-gradient(to bottom right, yellow, blue);
 }
 
 .information-image-container{
@@ -250,15 +295,30 @@ p{
 
 .information-text{
   width: 65%;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   align-content: center;
   margin: 2rem 1.5rem;
 }
 
+.information-text h3{
+  color: #093637;
+  padding-bottom: 1rem;
+}
+
+.information-text p{
+  color: #FFFFFF;
+  padding-bottom: 1rem;
+}
+
 .information-image-container img{
   max-width: 100%;
+  height: auto;
+  object-fit: cover;
   margin: 1rem 1rem;
-  border: solid 1px #c6c1c1;
+  /*border: solid 1px #c6c1c1;*/
 }
 
 .courses{
@@ -272,22 +332,20 @@ p{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
-  background-color: #fff0b2;
+  /*background-color: #fff0b2;*/
   overflow: hidden;
-  border: solid 1px #c6c1c1;
 }
 
 .courses-image-container img{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 90%;
+  width: 100%;
   height: auto;
   object-fit: contain;
-  margin: 2rem 1rem;
   overflow: hidden;
 }
 
@@ -297,7 +355,17 @@ p{
   width: 33%;
   height: auto;
   align-items: center;
-  border: solid 1px #c6c1c1;
+  /*background-color: #ff9f70;*/
+  background: linear-gradient(to bottom right, yellow, blue);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: solid 1px #c6c1c1;
+}
+
+.courses-information-text{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
 }
 
 figcaption {
@@ -344,8 +412,16 @@ video{
   margin: 1rem 1rem;
 }
 
+.thesis-image-text-container img{
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+}
+
 .thesis-information-text{
   margin: 0.5rem 0.5rem;
+  width: 65%;
+  height: auto;
 }
 
 #reimagine-urban{
@@ -354,5 +430,6 @@ video{
 
 footer p{
   font-size: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 4rem 1.5rem;
+  margin-bottom: 4rem;
 }
