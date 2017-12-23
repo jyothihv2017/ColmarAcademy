@@ -20,7 +20,8 @@ header .content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 header .logo {
@@ -35,8 +36,7 @@ header .logo {
 
 header nav ul {
   display: flex;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 header span{
@@ -53,7 +53,7 @@ header span{
 }
 
 nav li {
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 nav a {
@@ -61,8 +61,14 @@ nav a {
   line-height: 1.6;
   font-size: 1.3rem;
   color: #4A4A4A;
+  transition: all 1S ease-in-out 50ms;
 }
 
+a:hover,a:focus{
+color: #fff;
+background-color: #4A4A4A;
+border-radius: 5px;
+}
 
 h1 {
   font-size: 3.125rem;
@@ -118,6 +124,7 @@ p{
   font-size: 1.5rem;
   line-height: 1.1;
   font-style: italic;
+  color: #4A4A4A;
 }
 
 .quote-citation {
@@ -138,9 +145,7 @@ p{
   display: flex;
   position: relative;
   flex-direction: column;
-  /*background-color: #F2F2F2;*/
-   background: linear-gradient(to bottom right, yellow, orange);
-  /* background: linear-gradient(to bottom right, #000000, #0f9b0f);*/
+  background: linear-gradient(to bottom right, yellow, orange);
   top: 4rem;
 }
 
@@ -149,7 +154,6 @@ p{
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-    border-bottom: solid 1px #c6c1c1;
   /*background-color: #ffe670;*/
 }
 
@@ -212,7 +216,6 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   margin: 2rem 1.5rem;
-  border: solid 1px #000000;
 }
 
 .text-content{
@@ -224,7 +227,6 @@ p{
   width: 40%;
   height: 34rem;
   margin: 2rem 1.5rem 2rem 0;
-  border: solid 1px #c6c1c1;
 }
 
 .text-content h2{
@@ -233,6 +235,8 @@ p{
 
 .about{
   display: flex;
+  width: 100%;
+  height: auto;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
@@ -267,6 +271,11 @@ p{
 .practice-saying h3{
   margin-bottom: 1.5rem;
   color: #4A4A4A;
+  transition: all 1S ease-in-out 50ms;
+}
+
+.practice-saying h5 {
+  color: #FFFFFF;
 }
 
 .key-events{
@@ -283,14 +292,17 @@ p{
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  object-fit: contain;
 }
 
 #guest-lecture{
     background: linear-gradient(to bottom right, yellow, blue);
+    color: #fff;
 }
 
 .information-image-container{
   width: 35%;
+  align-items: center;
 }
 
 .information-text{
@@ -298,26 +310,32 @@ p{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   margin: 2rem 1.5rem;
 }
 
+
 .information-text h3{
   color: #093637;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .information-text p{
   color: #FFFFFF;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+span a{
+    transition: all 1S ease-in-out 50ms;
 }
 
 .information-image-container img{
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  overflow: hidden;
   /*border: solid 1px #c6c1c1;*/
 }
 
@@ -359,16 +377,34 @@ p{
   background: linear-gradient(to bottom right, yellow, blue);
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 2rem;
   border-bottom: solid 1px #c6c1c1;
 }
 
-.courses-information-text{
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-
+.courses-information-text h3, h5{
+text-align: left;
 }
 
-figcaption {
+.courses-information-text h2{
+ margin-top: 1rem;
+ margin-bottom: 0.5rem;
+}
+
+.courses-information-text h3{
+ margin-top: 0.5rem;
+ margin-bottom: 0.5rem;
+}
+
+
+.courses-information-text{
+margin-left: 1rem;
+margin-bottom: 1.5rem;
+}
+
+
+.figcaption {
+  position: relative;
+  left: -20px;
   caption-side: bottom;
 }
 
@@ -424,12 +460,35 @@ video{
   height: auto;
 }
 
-#reimagine-urban{
-  padding-bottom: 0.5rem;
+.thesis-information-text h3, h4 {
+  color: #4A4A4A;
 }
 
-footer p{
+#reimagine-urban{
+  padding-bottom: 0.5rem;
+  color: #4A4A4A;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  display: flex;
+  margin: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+/*
+footer span{
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
   font-size: 1rem;
   padding: 1rem 1.5rem 4rem 1.5rem;
   margin-bottom: 4rem;
 }
+*/
