@@ -14,44 +14,61 @@
   <!-- Header  section with logo and nav -->
     <header>
       <div class="content">
-        <div class="logo">
+        <div class="logo-desktop">
           <img src="./resources/images/ic-logo.svg">
           <span id="one">COLMAR</span><span id="two">ACADEMY</span>
         </div>
-        <nav class="center headerNav">
+        <nav class="header-nav-desktop">
           <ul>
             <li><a id="Oncampus" href="#">Oncampus</a></li>
-            <li><a id="Online" href="#">Online</a></li>
-            <li><a id="companies" href="#">Or Companies</a></li>
+            <li><a id="Online or Companies" href="#">Online or Companies</a></li>
             <li><a id="signin" href="#">Sign in</a></li>
           </ul>
         </nav>
+        <nav class="header-nav-mobile">
+          <ul>
+            <li><img class="logo-mobile" src="./resources/images/ic-logo.svg"></li>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+          </ul>
+         </nav>
       </div>
     </header>
 <div class="container">
   <!-- Header section end -->
 
   <!-- Main Banner section -->
-   <div class="main-content">
+   <div class="main-content-desktop">
      <div class="banner">
-      <div class="image-container">
-      </div>
+         <img src="./resources/images/banner.jpg" alt="banner image"/>
     </div>
       <div class="text-content">
         <h1 class="bold left striking">Learn something new everyday</h1>
         <h2 class="left cursive">Start today</h2>
-        <div ><a class="button" href="#">Start here</a></div>
+        <button><a class="button" href="#">Start here</a></button>
       </div>
     </div>
+    <div class="main-content-mobile">
+      <div class="banner">
+         <img src="./resources/images/banner.jpg" alt="banner image"/>
+     </div>
+       <div class="text-content">
+         <h1 class="bold left striking">Learn something new everyday</h1>
+         <h2 class="left cursive">Start today</h2>
+         <button><a class="button" href="#">Start here</a></button>
+       </div>
+     </div>
     <!-- Main banner section end-->
 
-    <!-- About Orientation and keynote events -->
+    <!-- About Information and key events -->
     <div class="about">
     <div class ="information-main">
       <div class="background-img">
+        <img src="./resources/images/information-main-crop.jpg" alt="Main Information image"/>
       </div>
       <div class="practice-saying">
-        <h3 class="bold top-margin left-margin left">It doesen't hurt to keep practicing</h3>
+        <h3 class="bold top-margin left-margin bottom-margin left">It doesen't hurt to keep practicing</h3>
         <h5 class="quote left-margin left">" Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"</h5>
         <h4 class=" quote-citation left-margin left top-margin bottom-margin">Emanuel, Sr Strategist at Hiring.com</h4>
       </div>
@@ -59,7 +76,7 @@
     <div class="key-events">
         <div class="key-events-information">
           <div class="information-image-container">
-          <img id="orientation-img" src="./resources/images/information-orientation.jpg" alt="Orientation Information"</img>
+          <img id="orientation-img" src="./resources/images/information-orientation.jpg" alt="Orientation Information"/>
           </div>
           <div  class="information-text">
             <h3 class="bold left-margin">Orientation Date</h3>
@@ -67,9 +84,19 @@
             <span class="left-margin"><a href="#">Read More</a></span>
           </div>
       </div>
+      <div class="key-events-information-mobile">
+        <div class="information-mobile">
+        <img id="orientation-img-mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation Information"/>
+        </div>
+        <div  class="information-text">
+          <h3 class="bold left-margin">Orientation Date</h3>
+          <span class="left-margin">Tue 10/11 &amp; Wed 10/12 8am-3pm</span><br>
+          <span class="left-margin"><a href="#">Read More</a></span>
+        </div>
+    </div>
       <div class="key-events-information" >
         <div class="information-image-container">
-          <img id="campus-img"  src="./resources/images/information-campus.jpg" alt="campus information"</img>
+          <img id="campus-img"  src="./resources/images/information-campus.jpg" alt="campus information"/>
         </div>
         <div class="information-text">
           <h3 class="bold left-margin">Our campus</h3>
@@ -77,9 +104,30 @@
           <span class="left-margin left"><a href="#">Read More</a></span>
         </div>
       </div>
+      <div class="key-events-information-mobile" >
+        <div class="information-mobile">
+          <img id="campus-img-mobile" src="./resources/images/information-campus-mobile.jpg" alt="campus Information"/>
+        </div>
+        <div class="information-text">
+          <h3 class="bold left-margin">Our campus</h3>
+          <span class="left-margin">Find which campus is close by you</span><br>
+          <span class="left-margin"><a href="#">Read More</a></span>
+        </div>
+      </div>
       <div id="guest-lecture" class="key-events-information">
         <div class="information-image-container">
-          <img id="guest-lecture-img" src="./resources/images/information-guest-lecture.jpg" alt="guest lecture information"</img>
+          <img id="guest-lecture-img" src="./resources/images/information-guest-lecture.jpg" alt="guest lecture information"/>
+        </div>
+        <div class="information-text">
+          <h3 class="bold left-margin">Our guest lecture</h3>
+          <span class="left-margin">Join a keynote with Oliver Sack<br>
+          about music in medical treatment</span><br>
+          <span class="left-margin"><a href="#">Read More</a></span>
+        </div>
+      </div>
+      <div id="guest-lecture-mobile" class="key-events-information-mobile">
+        <div class="information-mobile">
+          <img id="guest-lecture-img-mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture information"/>
         </div>
         <div class="information-text">
           <h3 class="bold left-margin">Our guest lecture</h3>
@@ -96,7 +144,7 @@
        <h1 class="bold top-margin bottom-margin center">Start learning</h1>
        <div class="courses-image-container">
          <div class="image-text-container">
-            <img src="./resources/images/course-software.jpg" alt="course software engineering"></img>
+            <img src="./resources/images/course-software.jpg" alt="course software engineering"/>
             <div class="figcaption courses-information-text">
              <h2 class="bold left">Sotware engineering</h2>
              <h3 class="left">COURSES</h3>
@@ -104,7 +152,7 @@
            </div>
         </div>
         <div class="image-text-container">
-         <img src="./resources/images/course-computer-art.jpg" alt="course computer art"></img>
+         <img src="./resources/images/course-computer-art.jpg" alt="course computer art"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Computer art</h2>
            <h3 class="left">COURSES</h3>
@@ -113,7 +161,7 @@
          </div>
        </div>
         <div class="image-text-container">
-         <img src="./resources/images/course-design.jpg" alt="course design"></img>
+         <img src="./resources/images/course-design.jpg" alt="course design"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Design</h2>
            <h3 class="left">COURSES</h3>
@@ -123,7 +171,7 @@
        </div>
        <div class="bottom-margin courses-image-container">
         <div class="figcaption image-text-container">
-         <img src="./resources/images/course-data.jpg" alt="course Data"></img>
+         <img src="./resources/images/course-data.jpg" alt="course Data"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Data</h2>
            <h3 class="left">COURSES</h3>
@@ -131,7 +179,7 @@
        </div>
        </div>
         <div class="image-text-container">
-         <img src="./resources/images/course-business.jpg" alt="course Business"></img>
+         <img src="./resources/images/course-business.jpg" alt="course Business"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Business</h2>
            <h3 class="left">COURSES</h3>
@@ -139,7 +187,7 @@
          </div>
        </div>
         <div class="image-text-container">
-         <img src="./resources/images/course-marketing.jpg" alt="course Marketing"></img>
+         <img src="./resources/images/course-marketing.jpg" alt="course Marketing"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Marketing</h2>
            <h3 class="left">COURSES</h3>
@@ -149,7 +197,17 @@
        </div>
      </div>
 <!-- Courses end -->
-
+<!--Courses Mobile Section begin-->
+<div class="courses-mobile">
+    <h1 class="bold top-margin bottom-margin center">Start learning</h1>
+        <button class="bold left">Sotware engineering</button>
+        <button class="bold left">Computer art</button>
+        <button class="bold left">Design</button>
+        <button class="bold left">Data</button>
+        <button class="bold left">Business</button>
+        <button class="bold left">Marketing</button>
+  </div>
+<!--Courses Mobile Section end-->
 <!-- Thesis section -->
         <h1 class="bold top-margin small-bottom-margin center">Thesis exhibit</h1>
         <div class="thesis">
@@ -158,18 +216,18 @@
             <source src="resources/videos/thesis.mp4" type="video/mp4">
            </video>
            <h3 id="reimagine-urban" class="bold">Reimagine urban</h3>
-           <p class="bottom-margin">Reimagine urban blah blah blah blah</p>
+           <p class="bottom-margin">Reimagine urban watching the video</p>
          </div>
          <div class="thesis-image-container">
            <figure class="thesis-image-text-container">
-            <img src="./resources/images/thesis-fisma.jpg" alt="Thesis Fisma image"></img>
+            <img src="./resources/images/thesis-fisma.jpg" alt="Thesis Fisma image"/>
             <figcaption class="thesis-information-text">
               <h3 class="left-margin">Fisma: Design and Prototype</h3>
               <h4 class="left-margin">Designer showcase of new prototype product</h4>
             </figcaption>
           </figure>
           <figure class="thesis-image-text-container">
-           <img src="./resources/images/thesis-now-and-then.jpg" alt="Thesis now and then image"></img>
+           <img src="./resources/images/thesis-now-and-then.jpg" alt="Thesis now and then image"/>
            <figcaption class="thesis-information-text">
              <h3 class="left-margin">Now and then</h3>
              <h4 class="left-margin">Research study about New York</h4>
@@ -178,6 +236,13 @@
        </div>
        </div>
        <!-- Thesis end -->
+       <!-- Thesis mobile section begin-->
+<div class="thesis-mobile">
+  <video controls>
+   <source src="resources/videos/thesis.mp4" type="video/mp4">
+  </video>
+</div>
+       <!-- Thesis mobile section end -->
        <!-- Footer section -->
        <footer>
          <span class="small-top-margin left-margin bottom-margin">&copy; 2016 Colmar Academy. All rights reserved</span>
