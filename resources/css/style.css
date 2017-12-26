@@ -381,11 +381,12 @@ button {
     margin: 2rem 1rem;
   }
   h1 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     margin-bottom: 2rem;
+    font-weight: bold;
   }
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     padding-bottom: 1.5rem;
   }
   button {
@@ -446,12 +447,13 @@ button {
   }
 
   .text-content h1 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     margin-bottom: 2rem;
+    font-weight: bold;
   }
 
   .text-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     padding-bottom: 1.5rem;
   }
 
@@ -482,39 +484,6 @@ button {
 }
 
 /* mobile media query for banner section end */
-
-/* content breakdown banner media query section begin
-
-
-@media only screen and (max-width: 1200px) {
-  .text-content button {
-    background-color: #4A4A4a;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0.5rem 0;
-    text-align: center;
-    font-size: 1rem;
-    white-space: nowrap;
-    width: 80%;
-  }
-  .text-content h1{
-    padding-bottom: 0;
-  }
-  h1 {
-    font-size: 2.0rem;
-    margin-bottom: 0;
-  }
-  h2 {
-    font-size: 1rem;
-    padding-bottom: 0;
-  }
-  .text-content a{
-    color: #FFFFFF;
-    line-height: 1.2;
-  }
-}
- */
-
 
 .about {
   display: flex;
@@ -664,18 +633,6 @@ span a {
     display: none;
   }
 
-  /*
-  .key-events-information-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    object-fit: contain;
-  }
-  */
-
-
   .key-events-information {
     display: flex;
     flex-direction: column;
@@ -722,11 +679,12 @@ span a {
   }
 
   .information-text h3 {
-    font-size: 1.0rem;
+    font-size: 1.75rem;
     margin-left: 1rem;
+    font-weight: bold;
   }
   .information-text span{
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     margin-left: 1rem;
   }
 }
@@ -800,11 +758,12 @@ span a {
     margin: 2rem 1rem 0 1rem;
   }
   .information-text h3 {
-    font-size: 1.0rem;
+    font-size: 1.75rem;
     margin-left: 1rem;
+    font-weight: bold;
   }
   .information-text span{
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     margin-left: 1rem;
   }
 }
@@ -923,6 +882,11 @@ span a {
     margin: 0 1rem 2rem 1rem;
   }
 
+   .courses h1{
+     font-size: 2.5rem;
+     font-weight: bold;
+   }
+
   .courses-mobile button{
     padding: 1rem 1rem 1.5rem 1rem;
     /*background-color: #243b55;*/
@@ -950,7 +914,10 @@ span a {
     align-items: center;
     margin: 0 1rem 2rem 1rem;
   }
-
+  .courses h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
   .courses-mobile button{
     padding: 1rem 1rem 1.5rem 1rem;
     /*background-color: #243b55;*/
