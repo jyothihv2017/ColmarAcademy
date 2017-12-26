@@ -163,19 +163,19 @@ h2 {
 h3 {
   font-size: 1.5rem;
   /* color: #DEC975; */
-  color: #FFFFFF;
+  color: #4A4A4A;
 }
 
 h4 {
   font-size: 1rem;
   /* color: #4A4A4A; */
-  color: #FFFFFF;
+  color: #4A4A4A;
 }
 
 h5 {
   font-size: 0.75rem;
   /* color: #4A4A4A; */
-  color: #FFFFFF;
+  color: #4A4A4A;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -225,7 +225,6 @@ button {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   flex-direction: column;
   background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
@@ -288,17 +287,8 @@ button {
   margin-right: 1.5rem;
 }
 
-/*
-.image-container img {
-  display: inline-flex;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-*/
-
 .banner {
+  flex: 1 1;
   width: 60%;
   height: auto;
   margin: 2rem 1.5rem;
@@ -337,7 +327,7 @@ button {
 @media only screen and (max-width: 415px) {
   button {
     /*border-radius: 4px;*/
-    background-color: #4A4A4a;
+    background-color: #4A4A4A;
     color: #FFFFFF;
     text-align: center;
     width: 60%;
@@ -369,13 +359,13 @@ button {
     /* background-color: #ffe670; */
   }
   .banner {
-    width: 100%;
+    width: 90%;
     height: auto;
     overflow: hidden;
-    margin: 0 0 2rem 0;
+    margin: 0 1rem;
   }
   .banner img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     overflow: hidden;
@@ -383,16 +373,16 @@ button {
   .text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     line-height: 1.0;
     width: 100%;
     height: auto;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
   }
   h1 {
-    font-size: 2.0rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
   h2 {
     font-size: 1.25rem;
@@ -408,7 +398,7 @@ button {
     font-size: 1rem;
     white-space: nowrap;
     border: none;
-    width: 60%;
+    width: 80%;
   }
   .text-content a{
     color: #FFFFFF;
@@ -433,13 +423,13 @@ button {
     /*background-color: #ffe670;*/
   }
   .banner {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-bottom: 2rem;
+    margin: 0;
     overflow: hidden;
   }
   .banner img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
     overflow: hidden;
@@ -447,18 +437,20 @@ button {
   .text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     line-height: 1.0;
-    width: 100%;
+    width: 85%;
     height: auto;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
   }
-  h1 {
-    font-size: 2.0rem;
-    margin-bottom: 1.25rem;
+
+  .text-content h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
-  h2 {
+
+  .text-content h2 {
     font-size: 1.25rem;
     padding-bottom: 1.5rem;
   }
@@ -473,44 +465,56 @@ button {
     font-size: 1rem;
     white-space: nowrap;
     border: none;
-    width: 60%;
+    width: 80%;
   }
   .text-content a{
     color: #FFFFFF;
   }
 
+}
+
+@media only screen and (max-width: 980px) {
+  .text-content h1 {
+    font-size: 1.70rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
 }
 
 /* mobile media query for banner section end */
 
-/* content breakdown banner media query section begin */
+/* content breakdown banner media query section begin
 
-@media only screen and (min-width: 761px) and (max-width: 965px) {
-  .button {
-    /*border-radius: 4px;*/
+
+@media only screen and (max-width: 1200px) {
+  .text-content button {
     background-color: #4A4A4a;
     color: #FFFFFF;
-    margin-top: 1.625rem;
+    margin: 0;
     padding: 0.5rem 0;
     text-align: center;
     font-size: 1rem;
     white-space: nowrap;
-    width: 60%;
+    width: 80%;
+  }
+  .text-content h1{
+    padding-bottom: 0;
   }
   h1 {
     font-size: 2.0rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0;
   }
   h2 {
-    font-size: 1.25rem;
-    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    padding-bottom: 0;
   }
   .text-content a{
     color: #FFFFFF;
+    line-height: 1.2;
   }
 }
+ */
 
-/* content breakdown banner media query section end */
 
 .about {
   display: flex;
@@ -527,7 +531,8 @@ button {
 .background-img img{
   /*background-image: url('../images/information-main.jpg');*/
   /*height: 25rem;*/
-  max-width: 95%;
+  flex: 0 2;
+  max-width: 90%;
   height: auto;
   object-fit: cover;
   margin-left: 1.5rem;
@@ -577,13 +582,19 @@ button {
   object-fit: cover;
 }
 
+.information-mobile img{
+  display: none;
+}
+
+
+.information-mobile{
+  display: none;
+}
+
+
 #guest-lecture {
   background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
   color: #fff;
-}
-
-.key-events-information-mobile {
-  display: none;
 }
 
 .information-image-container {
@@ -618,13 +629,14 @@ span a {
 }
 
 .information-image-container img {
+  flex: 0 1;
   max-width: 100%;
   height: auto;
   display: inline-block;
   object-fit: cover;
   /*padding: 1rem 1rem;*/
   overflow: hidden;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   /*border: solid 1px #c6c1c1;*/
 }
 
@@ -635,10 +647,7 @@ span a {
   .information-main {
     display: none;
   }
-  .practice-saying {
-    width: 100%;
-    height: auto;
-  }
+
   .key-events {
     display: flex;
     flex-direction: column;
@@ -647,9 +656,15 @@ span a {
     justify-content: space-between;
     align-items: center;
   }
-  .key-events-information {
+  .information-image-container img {
     display: none;
   }
+
+  .information-image-container{
+    display: none;
+  }
+
+  /*
   .key-events-information-mobile {
     display: flex;
     flex-direction: column;
@@ -658,15 +673,35 @@ span a {
     width: 100%;
     object-fit: contain;
   }
-  .information-image-container {
-    display: none;
+  */
+
+
+  .key-events-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    object-fit: cover;
+    margin: 1rem 1rem 4rem 1rem;
   }
+
+  .information-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    object-fit: contain;
+    margin: 0 1rem;
+  }
+
   .information-mobile img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    padding: 1rem 1rem;
+    /*padding: 1rem 1rem;*/
     overflow: hidden;
     /*border: solid 1px #c6c1c1;*/
   }
@@ -679,18 +714,20 @@ span a {
     width: 100%;
     display: flex;
     position: relative;
-    left: 32px;
+    left: 0;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
 
-  h3 {
+  .information-text h3 {
     font-size: 1.0rem;
+    margin-left: 1rem;
   }
   .information-text span{
     font-size: 0.75rem;
+    margin-left: 1rem;
   }
 }
 
@@ -701,10 +738,7 @@ span a {
   .information-main {
     display: none;
   }
-  .practice-saying {
-    width: 100%;
-    height: auto;
-  }
+
   .key-events {
     display: flex;
     flex-direction: column;
@@ -713,26 +747,41 @@ span a {
     justify-content: space-between;
     align-items: center;
   }
+
   .key-events-information {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    object-fit: cover;
+    margin: 1rem 1rem 4rem 1rem;
   }
-  .key-events-information-mobile {
+
+
+  .information-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     object-fit: contain;
+    margin: 0 1rem 0 1rem;
   }
+  .information-image-container img {
+    display: none;
+  }
+
   .information-image-container {
     display: none;
   }
+
   .information-mobile img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
     object-fit: cover;
-    padding: 1rem 1rem;
+  /*  padding: 1rem 1rem;*/
     overflow: hidden;
     /*border: solid 1px #c6c1c1;*/
   }
@@ -744,32 +793,33 @@ span a {
     width: 100%;
     display: flex;
     position: relative;
-    left: 80px;
+    left: 0;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
-  h3 {
+  .information-text h3 {
     font-size: 1.0rem;
+    margin-left: 1rem;
   }
   .information-text span{
     font-size: 0.75rem;
+    margin-left: 1rem;
   }
 }
 /* content breakdown media query for key events information begin */
 @media only screen and (min-width: 761px) and (max-width: 1135px){
-  .information-mobile img {
+  .information-image-container img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
     overflow: hidden;
     /*border: solid 1px #c6c1c1;*/
   }
 
-  h3 {
+  .information-text h3 {
     font-size: 1.0rem;
   }
   .information-text span{
@@ -865,6 +915,8 @@ span a {
   }
   .courses-mobile {
     display: flex;
+    position: relative;
+    top: -6rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -875,12 +927,12 @@ span a {
     padding: 1rem 1rem 1.5rem 1rem;
     /*background-color: #243b55;*/
     background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
-    width: 80%;
+    width: 90%;
     color: #2B2B2B;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0 0 0.5rem 0;
   }
 }
 
@@ -891,6 +943,8 @@ span a {
   }
   .courses-mobile {
     display: flex;
+    position: relative;
+    top: -6rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -901,12 +955,12 @@ span a {
     padding: 1rem 1rem 1.5rem 1rem;
     /*background-color: #243b55;*/
     background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
-    width: 80%;
+    width: 90%;
     color: #2B2B2B;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0 0 0.5rem 0;
   }
 
 }
@@ -952,7 +1006,9 @@ span a {
 }
 
 /* Media Query for mobile courses end */
-
+.thesis-title h1{
+  text-align: center;
+}
 .thesis {
   display: inline-flex;
   flex-direction: row;
@@ -987,21 +1043,25 @@ video {
   width: 40%;
   height: auto;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.thesis-image-text-container {
-  display: flex;
+
+.thesis-info {
+ display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 1rem 1rem;
 }
 
-figure img {
+
+
+.thesis-image-text-container img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .thesis-information-text {
@@ -1027,8 +1087,14 @@ figure img {
     display: none;
   }
 
+.thesis-title {
+  position: relative;
+  top: -8rem;
+}
   .thesis-mobile {
     display: flex;
+    position: relative;
+    top: -8rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -1038,7 +1104,7 @@ figure img {
     max-width: 93.5%;
     height: auto;
     object-fit: contain;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     overflow: hidden;
   }
 
@@ -1050,8 +1116,16 @@ figure img {
   .thesis{
     display: none;
   }
+
+  .thesis-title {
+    position: relative;
+    top: -8rem;
+  }
+
   .thesis-mobile {
     display: flex;
+    position: relative;
+    top: -8rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -1061,7 +1135,7 @@ figure img {
     max-width: 93.5%;
     height: auto;
     object-fit: contain;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     overflow: hidden;
   }
 
@@ -1078,17 +1152,18 @@ figure img {
     overflow: hidden;
   }
 
-  .thesis-image-container img {
+  .thesis-image-text-container img {
     max-width: 85%;
     height: auto;
     object-fit: contain;
+    overflow: hidden;
   }
 
-figcaption h3 {
+.thesis-information-text h3 {
   font-size: 1.0rem;
 }
 
-figcaption h4{
+.thesis-information-text h4{
   font-size: 0.75rem;
 }
 
@@ -1112,6 +1187,8 @@ footer nav ul {
 
   footer {
     display: flex;
+    position: relative;
+    top: -8rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1130,6 +1207,8 @@ footer nav ul {
 
   footer {
     display: flex;
+    position: relative;
+    top: -8rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;

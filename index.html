@@ -78,25 +78,21 @@
           <div class="information-image-container">
           <img id="orientation-img" src="./resources/images/information-orientation.jpg" alt="Orientation Information"/>
           </div>
+          <div class="information-mobile">
+          <img id="orientation-img-mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation Information"/>
+          </div>
           <div  class="information-text">
             <h3 class="bold left-margin">Orientation Date</h3>
             <span class="left-margin">Tue 10/11 &amp; Wed 10/12 8am-3pm</span><br>
             <span class="left-margin"><a href="#">Read More</a></span>
           </div>
       </div>
-      <div class="key-events-information-mobile">
-        <div class="information-mobile">
-        <img id="orientation-img-mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation Information"/>
-        </div>
-        <div  class="information-text">
-          <h3 class="bold left-margin">Orientation Date</h3>
-          <span class="left-margin">Tue 10/11 &amp; Wed 10/12 8am-3pm</span><br>
-          <span class="left-margin"><a href="#">Read More</a></span>
-        </div>
-    </div>
       <div class="key-events-information" >
         <div class="information-image-container">
           <img id="campus-img"  src="./resources/images/information-campus.jpg" alt="campus information"/>
+        </div>
+        <div class="information-mobile">
+          <img id="campus-img-mobile" src="./resources/images/information-campus-mobile.jpg" alt="campus Information"/>
         </div>
         <div class="information-text">
           <h3 class="bold left-margin">Our campus</h3>
@@ -104,28 +100,10 @@
           <span class="left-margin left"><a href="#">Read More</a></span>
         </div>
       </div>
-      <div class="key-events-information-mobile" >
-        <div class="information-mobile">
-          <img id="campus-img-mobile" src="./resources/images/information-campus-mobile.jpg" alt="campus Information"/>
-        </div>
-        <div class="information-text">
-          <h3 class="bold left-margin">Our campus</h3>
-          <span class="left-margin">Find which campus is close by you</span><br>
-          <span class="left-margin"><a href="#">Read More</a></span>
-        </div>
-      </div>
       <div id="guest-lecture" class="key-events-information">
         <div class="information-image-container">
           <img id="guest-lecture-img" src="./resources/images/information-guest-lecture.jpg" alt="guest lecture information"/>
         </div>
-        <div class="information-text">
-          <h3 class="bold left-margin">Our guest lecture</h3>
-          <span class="left-margin">Join a keynote with Oliver Sack<br>
-          about music in medical treatment</span><br>
-          <span class="left-margin"><a href="#">Read More</a></span>
-        </div>
-      </div>
-      <div id="guest-lecture-mobile" class="key-events-information-mobile">
         <div class="information-mobile">
           <img id="guest-lecture-img-mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture information"/>
         </div>
@@ -170,7 +148,7 @@
        </div>
        </div>
        <div class="bottom-margin courses-image-container">
-        <div class="figcaption image-text-container">
+        <div class="image-text-container">
          <img src="./resources/images/course-data.jpg" alt="course Data"/>
          <div class="figcaption courses-information-text">
            <h2 class="bold left">Data</h2>
@@ -209,7 +187,9 @@
   </div>
 <!--Courses Mobile Section end-->
 <!-- Thesis section -->
-        <h1 class="bold top-margin small-bottom-margin center">Thesis exhibit</h1>
+        <div class="thesis-title">
+           <h1 class="bold top-margin small-bottom-margin center">Thesis exhibit</h1>
+        </div>
         <div class="thesis">
          <div class="video-container">
            <video controls>
@@ -219,20 +199,24 @@
            <p class="bottom-margin">Reimagine urban watching the video</p>
          </div>
          <div class="thesis-image-container">
-           <figure class="thesis-image-text-container">
+           <div class="thesis-info">
+           <div class="thesis-image-text-container">
             <img src="./resources/images/thesis-fisma.jpg" alt="Thesis Fisma image"/>
-            <figcaption class="thesis-information-text">
+          </div>
+            <div class="figcaption thesis-information-text">
               <h3 class="left-margin">Fisma: Design and Prototype</h3>
               <h4 class="left-margin">Designer showcase of new prototype product</h4>
-            </figcaption>
-          </figure>
-          <figure class="thesis-image-text-container">
+            </div>
+          </div>
+          <div class="thesis-info">
+          <div class="thesis-image-text-container">
            <img src="./resources/images/thesis-now-and-then.jpg" alt="Thesis now and then image"/>
-           <figcaption class="thesis-information-text">
+         </div>
+           <div class="figcaption thesis-information-text">
              <h3 class="left-margin">Now and then</h3>
              <h4 class="left-margin">Research study about New York</h4>
-           </figcaption>
-         </figure>
+           </div>
+         </div>
        </div>
        </div>
        <!-- Thesis end -->
