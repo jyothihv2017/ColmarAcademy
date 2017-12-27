@@ -472,6 +472,11 @@ button {
   .text-content a{
     color: #FFFFFF;
   }
+  a:hover, a:focus {
+    color: #fff;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+  }
 
 }
 
