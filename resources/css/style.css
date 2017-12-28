@@ -73,43 +73,7 @@ a:hover, a:focus {
   border-radius: 5px;
 }
 
-/* header -nav mobile media query begin */
 
-@media only screen and (max-width: 450px) {
-  header .header-nav-desktop {
-    display: none;
-  }
-  header .logo-desktop {
-    display: none;
-  }
-
-  header .header-nav-mobile {
-    display: block;
-    width: 100%;
-  }
-
-  header .content {
-    padding: .5rem 0;
-  }
-
-  header .header-nav-mobile ul {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-  }
-  header .header-nav-mobile li {
-    padding: 0;
-  }
-  a:hover, a:focus {
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-  }
-}
-
-/* header -nav mobile media query end */
 
 /* header -nav tablet media query begin */
 
@@ -140,8 +104,8 @@ a:hover, a:focus {
     padding: 0;
   }
   a:hover, a:focus {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000;
     border-radius: 5px;
   }
 
@@ -150,7 +114,7 @@ a:hover, a:focus {
 /* header -nav tablet media query end */
 
 h1 {
-  font-size: 3.125rem;
+  font-size: 2.75rem;
   color: #4A4A4A;
   font-weight: bold;
 }
@@ -200,7 +164,7 @@ p {
 .quote {
   font-family: "Palatino", serif;
   font-size: 1.25rem;
-  line-height: 1.1;
+  line-height: 1.3;
   font-style: italic;
   color: #4A4A4A;
 }
@@ -306,7 +270,7 @@ button {
 .text-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   line-height: 1.4;
   width: 40%;
@@ -326,7 +290,6 @@ button {
 
 @media only screen and (max-width: 415px) {
   button {
-    /*border-radius: 4px;*/
     background-color: #4A4A4A;
     color: #FFFFFF;
     text-align: center;
@@ -343,70 +306,9 @@ button {
 
 }
 
+
 /* content breakdown for button media query end */
 
-/* mobile media query for banner section begin */
-
-@media only screen and (max-width: 450px) {
-  .main-content-desktop {
-    display: none;
-  }
-  .main-content-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    /* background-color: #ffe670; */
-  }
-  .banner {
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 1rem;
-  }
-  .banner img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    overflow: hidden;
-  }
-  .text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    line-height: 1.0;
-    width: 100%;
-    height: auto;
-    margin: 2rem 1rem;
-  }
-  h1 {
-    font-size: 2.25rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 1.75rem;
-    padding-bottom: 1.5rem;
-  }
-  button {
-    /* border-radius: 4px; */
-    background-color: #4A4A4a;
-    color: #FFFFFF;
-    margin-top: 1.625rem;
-    padding: 0.5rem 0;
-    text-align: center;
-    font-size: 1rem;
-    white-space: nowrap;
-    border: none;
-    width: 80%;
-  }
-  .text-content a{
-    color: #FFFFFF;
-  }
-}
-
-/* mobile media query for banner section end */
 
 /* tablet media query for banner section begin */
 
@@ -480,7 +382,7 @@ button {
 
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 983px) {
   .text-content h1 {
     font-size: 1.70rem;
     font-weight: bold;
@@ -538,6 +440,10 @@ button {
   color: #4A4A4A;
   background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
   /*text-shadow: 2px 2px 3px #4A4A4A;*/
+}
+
+.practice-saying h4 {
+margin-top: 4rem;
 }
 
 .key-events {
@@ -614,85 +520,6 @@ span a {
   /*border: solid 1px #c6c1c1;*/
 }
 
-@media only screen and (max-width: 450px) {
-  .background-image {
-    display: none;
-  }
-  .information-main {
-    display: none;
-  }
-
-  .key-events {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .information-image-container img {
-    display: none;
-  }
-
-  .information-image-container{
-    display: none;
-  }
-
-  .key-events-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    object-fit: cover;
-    margin: 1rem 1rem 4rem 1rem;
-  }
-
-  .information-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    object-fit: contain;
-    margin: 0 1rem;
-  }
-
-  .information-mobile img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    /*padding: 1rem 1rem;*/
-    overflow: hidden;
-    /*border: solid 1px #c6c1c1;*/
-  }
-
-  #guest-lecture-mobile {
-    background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
-    color: #fff;
-  }
-  .information-text {
-    width: 100%;
-    display: flex;
-    position: relative;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 2rem 1rem 0 1rem;
-  }
-
-  .information-text h3 {
-    font-size: 1.75rem;
-    margin-left: 1rem;
-    font-weight: bold;
-  }
-  .information-text span{
-    font-size: 1.25rem;
-    margin-left: 1rem;
-  }
-}
 
 @media only screen and (max-width: 760px) {
   .background-image {
@@ -871,39 +698,6 @@ span a {
   caption-side: bottom;
 }
 
-/* Media Query for mobile courses begin */
-@media only screen and (max-width: 450px){
-
-  .courses{
-    display: none;
-  }
-  .courses-mobile {
-    display: flex;
-    position: relative;
-    top: -6rem;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 1rem 2rem 1rem;
-  }
-
-   .courses h1{
-     font-size: 2.5rem;
-     font-weight: bold;
-   }
-
-  .courses-mobile button{
-    padding: 1rem 1rem 1.5rem 1rem;
-    /*background-color: #243b55;*/
-    background: linear-gradient(to bottom right, #8e9eab, #eef2f3);
-    text-align: left;
-    white-space: nowrap;
-    width: 90%;
-    color: #2B2B2B;
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem 0;
-  }
-}
 
 @media only screen and (max-width: 760px){
 
@@ -972,10 +766,8 @@ span a {
     left: -10px;
     caption-side: bottom;
   }
-
-
-
 }
+
 
 /* Media Query for mobile courses end */
 .thesis-title h1{
@@ -1154,26 +946,6 @@ footer nav ul {
   font-size: 1rem;
 }
 
-/* Media Query for mobile footer begin */
-@media only screen and (max-width: 450px){
-
-  footer {
-    display: flex;
-    position: relative;
-    top: -8rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bottom-margin{
-    margin-bottom: 1rem;
-  }
-
-  footer nav{
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 760px){
 
